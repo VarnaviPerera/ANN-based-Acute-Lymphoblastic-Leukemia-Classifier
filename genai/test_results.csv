@@ -1,0 +1,100 @@
+Image,True_Class,Predicted_Output
+benign_aug_33.jpg,Benign,"**Classification: Pre**
+
+**Explanation generated as if using Grad-CAM:**
+
+**Highlighted Regions:**
+The regions of interest that the model would focus on are the prominent cells highlighted in purple, especially the larger and denser cells in the center of the image.
+
+**Reasons for Prediction:**
+1. **Cell Size and Density**: The model detected that while some cells are larger and denser than typical Benign cells, they do not exhibit the extreme irregularities or clustering seen in Pro cells. This suggests they are intermediate in nature.
+   
+2. **Cell Characteristics**: The highlighted cells show features that align with Pre-B cells. The cells appear to be at an intermediate stage of malignancy displaying typical characteristics such as irregular shapes but not as aggressive or immature as Pro-B cells.
+   
+3. **Comparative Features**: Comparing with example images provided:
+   - They are more irregular and variable than the Early cells but less aggressive than the Pro sample cells.
+   - The model has identified similarity to the intermediate type cells apparent in the Pre class sample images.
+
+Thus, the model predicted the image as belonging to the class Pre, indicating intermediate malignant cells commonly observed in Acute Lymphoblastic Leukemia (ALL)."
+benign_aug_34.jpg,Benign,"**Classification:** Pre
+
+**Explanation of Grad-CAM heatmap:**
+
+**Highlighted Regions:**
+- The model would focus on the central and upper regions of the image where multiple cells exhibit notable characteristics.
+- Particularly, the large cell in the center and adjacent cells displaying distinct features.
+
+**Explanation of Prediction:**
+- **Cell Morphology:** The highlighted cells exhibit characteristics typical of intermediate malignant cells, such as varying size and irregular shapes.
+- **Color and Density:** The purple staining is more intense and localized in certain regions, indicating a higher concentration of malignant cells.
+- **Cell Grouping:** The distribution and density of the cells are consistent with Pre-B cells, which are common in intermediate stages of malignancy.
+
+These factors combined contribute to the model's prediction of the ""Pre"" class for this peripheral blood smear image."
+WBC-Malignant-Early-035.jpg,Early,"**Classification**: Early
+
+**Explanation with Grad-CAM Focus**:
+
+**Highlighted Regions**:
+- The model would focus on several specific regions where the cells, marked in purple, appear relatively small and round, exhibiting a high nucleus-to-cytoplasm ratio. Such areas are indicative of early-stage cancerous cells.
+
+**Reasoning**:
+- The cells in the image exhibit characteristics of Pre-B cells which are very early-stage cancerous cells. They are difficult to detect as they often don't display strong malignant features prominently.
+- The presence of these smaller, round cells with prominent nuclei, scattered throughout the image is critical for making the classification.
+- Although these cells stand out due to their relatively smaller size and early development stage, they still exhibit some features that differentiate them from more aggressive intermediate or highly malignant cells.
+- These visual cues guide the model in determining that these are Early stage cells rather than benign, intermediate, or highly aggressive cancer cells."
+WBC-Malignant-Early-036.jpg,Early,"This image is classified as Early.
+
+**Explanation:**
+
+**Grad-CAM heatmap analysis:**
+- The model would focus on the darker purple stained areas, specifically on the smaller round cells scattered throughout the image.
+- The regions around these highlighted cells are less intense compared to other classes such as ""Pre"" or ""Pro"", indicating these cells are early-stage rather than more developed cancerous cells with aggressive characteristics.
+
+**Reasoning:**
+- These cells have characteristics of Early-stage Pre-B cells. They are smaller and more consistently shaped than those seen in advanced stages.
+- The purple staining shows less intensity, and the cells lack the larger, more deformed nuclei seen in later stages like ""Pro"".
+- Early-stage cancerous cells are difficult to detect, their appearance being somewhat subtle compared to more aggressive stages. The cells here are showing characteristics typical of early malignancy without the more aggressive features found in Pro-B cells.
+
+The model likely predicted the Early class based on the less aggressive and smaller size of the cells in the image. The shape and staining intensity of these cells match closely with Early-stage cancerous cells."
+WBC-Malignant-Pre-036.jpg,Pre,"**Classification:** Pre
+
+**Grad-CAM Explanation:**
+- The model focuses on the regions with distinctly stained cells, particularly the prominent cells with a purple hue.
+- These areas are highlighted because they exhibit characteristics common to Pre-B cells, such as intermediate malignant features and a presence indicative of the most common subtype.
+
+**Reasoning:**
+- The cells in focus are relatively larger and more noticeable compared to benign cells. 
+- They do not exhibit the aggressive morphological features typical of Pro-B cells.
+- The overall appearance, including size and staining patterns, corresponds to intermediate malignant conditions, consistent with Pre-B cells.
+- This detailed observation guided the model's prediction towards classifying the image as representing Pre-B cells."
+WBC-Malignant-Pre-037.jpg,Pre,"1. **Classification**: Pro
+
+2. **Explanation**:
+   - **Highlighted Regions**: The model would primarily focus on the large clusters of cells with prominent nuclei, especially in the central part of the image where cells appear to be densely packed and darker in color.
+   - **Reason for Prediction**: 
+     - The highlighted regions contain characteristics of Pro-B cells which are immature and highly aggressive cancerous cells.
+     - The size, shape, and density of the cells in the central part of the image are indicative of the immature, proliferative nature of Pro-B cells.
+     - The presence of darker, densely packed clusters of larger cells and prominent nuclei highly suggest advanced malignancy, aligning with the typical features observed in Pro-B cells."
+WBC-Malignant-Pro-038.jpg,Pro,"**Predicted Class: Pro**
+
+**Explanation:**
+
+**Highlighted Regions (Focus Areas):**
+- The model would focus on the larger, distinctly colored cells with prominent nuclei which are visible in the center and left regions of the image. These cells have characteristics typical of Pro-B cells, such as increased size and prominent nuclei compared to surrounding cells.
+
+**Reasoning:**
+- **Cell Size and Shape:** The highlighted cells are notably larger and rounder compared to benign and early-stage cells. This difference in size often indicates a higher level of malignancy and aggression.
+- **Nuclear Prominence:** The nuclei of these cells appear larger and more defined, a key characteristic of Pro-B cells. These cells are immature and highly aggressive, exhibiting pronounced nuclear features.
+- **Cell Density and Distribution:** The varied sizes and scattering of these prominent cells also match the description of Pro-B cells, which would be less organized and less uniformly distributed than benign or early-stage cells.
+
+The model's prediction is based on these features, which align closely with the characteristics of highly aggressive and immature cancerous cells typical of the Pro class."
+WBC-Malignant-Pro-039.jpg,Pro,"**Classification:** Pro
+
+**Explanation:**
+1. **Focused Regions:**
+   - The model focuses on the dense clusters of purple-stained cells, particularly the three large cells in the center area of the image.
+
+2. **Reason for Prediction:**
+   - **Cell morphology and staining:** The highlighted cells are larger and have more intense staining compared to regular benign cells. Their size and staining intensity align with the characteristics of Pro-B cells, which are immature and highly aggressive cancerous cells.
+   - **Cell clustering:** The cells are clustered together, which is often observed in aggressive cancer types where rapid proliferation occurs.
+   - In the Grad-CAM heatmap, we would expect the most activation around these larger stained cells, indicating the model's focus on these regions to make the classification."
